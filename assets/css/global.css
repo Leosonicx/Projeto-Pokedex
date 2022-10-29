@@ -12,18 +12,21 @@ body {
   background-attachment: fixed;
 }
 
-body > section > h1 {
-  font-size: 3rem;
-  text-align: center;
-  color: yellow;
-  opacity: 0;
-  margin-top: 25px;
-  text-align: center;
-  -webkit-transition: opacity 2s ease-in;
-  -moz-transition: opacity 2s ease-in;
-  -o-transition: opacity 2s ease-in;
-  -ms-transition: opacity 2s ease-in;
-  transition: opacity 2s ease-in;
+body > section > img {
+  max-width: 15rem;
+  display: flex;
+  justify-items: center;
+  margin-bottom: 22.3rem;
+}
+
+.fade-in-text {
+  font-family: Arial;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .pokedex-conteudo {
@@ -129,11 +132,11 @@ ol.pokemons > li.pokemon:hover {
   height: 120px;
 }
 
-img {
+div > img {
   transition: transform .4s;
 }
 
-img:hover {
+div > img:hover {
   transform: scale(1.5);
 }
 
