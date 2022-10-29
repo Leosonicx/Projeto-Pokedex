@@ -5,16 +5,25 @@
 
 body {
   background-color: rgba(231, 229, 229, 0.452);
-  background-image: url(/Imagens/Pokedex-Wallpaper.png);
+  background-image: url(/Imagens/Pokedex-Wallpaper.gif);
   background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover; 
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 body > section > h1 {
+  font-size: 3rem;
   text-align: center;
-  color: rgba(103, 217, 65, 0.593);
+  color: yellow;
+  opacity: 0;
+  margin-top: 25px;
+  text-align: center;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
 }
 
 .pokedex-conteudo {
@@ -33,7 +42,7 @@ body > section > h1 {
 }
 
 ol.pokemons > li.pokemon {
-  background: linear-gradient(-45deg, #1cdbae , #43b298, #00fdc2 );
+  background: linear-gradient(-45deg, rgba(189, 189, 16, 0.36) , rgba(255, 255, 0, 0.475), rgba(219, 219, 26, 0.459) );
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
@@ -50,9 +59,8 @@ ol.pokemons > li.pokemon {
 	}
 }
 
-
 ol.pokemons > li.pokemon:hover {
-  background-image: linear-gradient(to right, #31ba9a , #3adcb6);
+  background-image: linear-gradient(to right, rgba(255, 255, 0, 0.576) , rgba(255, 255, 0, 0.568));
 }
 
 .pokemon {
