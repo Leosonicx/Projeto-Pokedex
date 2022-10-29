@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(https://raw.githubusercontent.com/Leosonicx/Gifs-Read.me/main/leosonicx-output/Pokemon-Wallpaper-LITE.png);
+  background-image: url(https://raw.githubusercontent.com/Leosonicx/Gifs-Read.me/main/leosonicx-output/Pokemon-Wallpaper-Compressed.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,7 +63,7 @@ img#MyName {
 }
 
 ol.pokemons > li.pokemon {
-  background: linear-gradient(-45deg, rgb(255, 255, 255), rgba(0, 0, 0, 0.459), rgba(147, 147, 147, 0.368));
+  background: linear-gradient(-45deg, rgb(255, 255, 255), rgba(114, 114, 114, 0.459), rgba(147, 147, 147, 0.368));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
