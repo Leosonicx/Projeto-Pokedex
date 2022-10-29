@@ -12,7 +12,7 @@ body {
   background-attachment: fixed;
 }
 
-#MyName {
+img#MyName {
   max-width: 15rem;
   margin-bottom: 22.3rem;
 }
