@@ -5,7 +5,7 @@
 
 body {
   background-color: rgba(231, 229, 229, 0.452);
-  background-image: url(/Imagens/Pokedex-Wallpaper.gif);
+  background-image: url(../Imagens/Pokedex-Wallpaper.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,19 +14,7 @@ body {
 
 body > section > img {
   max-width: 15rem;
-  display: flex;
-  justify-items: center;
   margin-bottom: 22.3rem;
-}
-
-.fade-in-text {
-  font-family: Arial;
-  animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
 }
 
 .pokedex-conteudo {
