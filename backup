@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex by Leonardo Jonathan do Carmo</title>
+  <!--Media Querys-->
+  <link rel="stylesheet" href="assets/css/global.css">
+  
+  <!--Fonte Robot-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">  
+
+  <!--Normalize CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <img id="MyName" src="Imagens/MyName.png" alt="Pokedex - Leonardo Jonathan do Carmo">
+    <nav>
+      <ul class="header-menu">
+          <li><a href="https://github.com/Leosonicx" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/leonardo-carmo-707333217/" target="_blank">Linkedin</a></li>
+          <li><a href="https://www.instagram.com/leosonicxx/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100010823321011" target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com/Leosonicx_" target="_blank">Twitter</a></li>
+          <li><a href="https://www.youtube.com/channel/UCAgHZAKXLCrA80WzomqnWng" target="_blank">Youtube</a></li>
+          <li><a href="https://discord.gg/qSXpztQ3QT" target="_blank">Discord</a></li>
+      </ul>
+  </nav>
+</header>
+  
+  <section class="pokedex-conteudo">
+    
+    <ol id="listaPokemon" class="pokemons">
+      <li class="pokemon">
+        <span class="numero-pokemon">#001</span>
+        <span class="nome">Bulbasaur</span>
+
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Planta</li>
+            <li class="tipo">Veneno</li>
+          </ol>
+
+          <img src="Imagens/bulbasaur.png" alt="Bulbasaur">
+        </div>
+      </li>
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#002</span>
+        <span class="nome">Ivysaur</span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Planta</li>
+            <li class="tipo">Veneno</li>
+          </ol>
+          <img src="Imagens/ivysaur.png" alt="Ivysaur">
+        </div>
+      </li>
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#003</span>
+        <span class="nome">Venusaur</span>
+
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Planta</li>
+            <li class="tipo">Veneno</li>
+          </ol>
+
+          <img src="Imagens/venusaur.png" alt="Venusaur">
+        </div>
+      </li>
+
+
+      
+      <li class="pokemon">
+        <span class="numero-pokemon">#004</span>
+        <span class="nome">Charmander</span>
+
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Fogo</li>
+          </ol>
+
+          <img src="Imagens/charmander.png" alt="Charmander">
+        </div>
+      </li>
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#005</span>
+        <span class="nome">Charmeleon</span>
+
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Fogo</li>
+          </ol>
+
+          <img src="Imagens/charmeleon.png" alt="Charmeleon">
+        </div>
+      </li>
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#006</span>
+        <span class="nome">Charizard</span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Fogo</li>
+            <li class="tipo">Voador</li>
+          </ol>
+          <img src="Imagens/charizard.png" alt="Charizard">
+        </div>
+      </li>
+
+
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#007</span>
+        <span class="nome">Squirtle</span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Água</li>
+          </ol>
+          <img src="Imagens/squirtle.png" alt="Squirtle">
+        </div>
+      </li>
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#008</span>
+        <span class="nome">Wartortle</span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Água</li>
+          </ol>
+          <img src="Imagens/wartortle.png" alt="Wartortle">
+        </div>
+      </li>
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#009</span>
+        <span class="nome">Blastoise</span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Água</li>
+          </ol>
+          <img src="Imagens/blastoise.png" alt="Blastoise">
+        </div>
+      </li>
+
+
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#010</span>
+        <span class="nome">Caterpie</span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Inseto</li>
+          </ol>
+          <img src="Imagens/caterpie.png" alt="Caterpie">
+        </div>
+      </li>
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#011</span>
+        <span class="nome">Metapod</span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Inseto</li>
+          </ol>
+          <img src="Imagens/Metapod.png" alt="Metapod">
+        </div>
+      </li>
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#012</span>
+        <span class="nome">Butterfree</span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Inseto</li>
+            <li class="tipo">Voador</li>
+          </ol>
+          <img src="Imagens/butterfree.png" alt="Butterfree">
+        </div>
+      </li>
+
+
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#013</span>
+        <span class="nome">Weedle </span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Inseto</li>
+            <li class="tipo">Veneno</li>
+          </ol>
+          <img src="Imagens/weedle.png" alt="Weedle">
+        </div>
+      </li>
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#014</span>
+        <span class="nome">Kakuna</span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Inseto</li>
+            <li class="tipo">Veneno</li>
+          </ol>
+          <img src="Imagens/kakuna.png" alt="Kakuna">
+        </div>
+      </li>
+
+      <li class="pokemon">
+        <span class="numero-pokemon">#015</span>
+        <span class="nome">Beedrill</span>
+        
+        <div class="detalhe">
+
+          <ol class="tipos">
+            <li class="tipo">Inseto</li>
+            <li class="tipo">Veneno</li>
+          </ol>
+          <img src="Imagens/beedrill.png" alt="Beedrill">
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+
+  <!--Main JavaScript-->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
