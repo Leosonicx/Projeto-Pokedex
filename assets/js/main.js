@@ -1,17 +1,20 @@
+function converPokemonTypesToLi(pokemonTypes) {
+  return pokemonTypes.map((typeSlot) => `<li class="tipo">${typeSlot.type.name}</li>`)
+}
+
 function convertPokemonToLi(pokemon) {
   return `
   <li class="pokemon">
-        <span class="numero-pokemon">#${pokemon.order}</span>
+        <span class="numero-pokemon">${pokemon.order}</span>
         <span class="nome">${pokemon.name}</span>
 
         <div class="detalhe">
 
           <ol class="tipos">
-            <li class="tipo">Planta</li>
-            <li class="tipo">Veneno</li>
+            ${converPokemonTypesToLi(pokemon.types).join('')}
           </ol>
 
-          <img src="Imagens/bulbasaur.png" alt="${pokemon.name}">
+          <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}">
         </div>
       </li>
    `
