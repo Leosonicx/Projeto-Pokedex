@@ -1,7 +1,7 @@
 function convertPokemonToLi(pokemon) {
   return `
   <li class="pokemon">
-        <span class="numero-pokemon">#001</span>
+        <span class="numero-pokemon">#${pokemon.order}</span>
         <span class="nome">${pokemon.name}</span>
 
         <div class="detalhe">
@@ -20,8 +20,8 @@ function convertPokemonToLi(pokemon) {
 const pokemonList = document.getElementById('pokemonList')
 
 pokeApi.getPokemons().then((pokemons = []) => {
-  pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('')
-
+  const newHtml = pokemons.map(convertPokemonToLi).join('')
+  pokemonList.innerHTML += newHtml
 
   // const listItems = []
 
