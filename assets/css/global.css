@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(https://raw.githubusercontent.com/Leosonicx/Projeto-Pokedex/main/Pokemon-Wallpaper-Compressed.gif);
+  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,9 +152,10 @@ img#MyName {
 
 .nome {
   color: #000;
-  margin-bottom: .25rem;
-  font-size: 2rem;
-  text-shadow: 2px 2px rgba(255, 255, 255, 0.381);
+  margin-bottom: .20rem;
+  font-size: 2.5rem;
+  text-shadow: 3px 3px rgba(51, 51, 51, 0.335);
+  font-family: 'Permanent Marker', cursive;
 }
 
 .pokemon .detalhe {
@@ -183,11 +184,11 @@ img#MyName {
   display: flex;
   background-color: rgba(0, 0, 0, 0.072);
   height: 35px;
-  max-width: 68px;
   align-items: center;
   font-size: 1rem;
   cursor: pointer;
   box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.167);
+  text-transform: capitalize;
 }
 
 .tipo:hover {
