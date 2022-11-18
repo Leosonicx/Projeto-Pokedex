@@ -1,3 +1,14 @@
+const carregarMaisBotao = document.getElementById('carregarMaisBotao')
+const limit = 10
+let offset = 0;
+
+function loadPokemonItens(limit, offset) {
+  pokeApi.getPokemons(limit, offset).then((pokemons = []) => {
+    const newHtml = pokemons.map(convertPokemonToLi).join('')
+    pokemonList.innerHTML += newHtml
+    }
+  )}
+
 function convertPokemonToLi(pokemon) {
   return `
       <li class="pokemon ${pokemon.type}">
@@ -7,17 +18,25 @@ function convertPokemonToLi(pokemon) {
               <ol class="tipos">
                   ${pokemon.types.map((type) => `<li class="tipo ${type}">${type}</li>`).join('')}
               </ol>
-              <img src="${pokemon.photo}"
-                   alt="${pokemon.name}">
+              <img src="${pokemon.photo}" alt="${pokemon.name}">
           </div>
       </li>
   `
 }
+
 const pokemonList = document.getElementById('pokemonList')
 
 pokeApi.getPokemons().then((pokemons = []) => {
   const newHtml = pokemons.map(convertPokemonToLi).join('')
-  pokemonList.innerHTML += newHtml
+  pokemonList.innerHTML = newHtml
+})
+
+loadPokemonItens(limit, offset)
+
+carregarMaisBotao.addEventListener('click', () => {
+  offset += limit
+  loadPokemonItens(limit, offset)
+})
 
   // const listItems = []
 
@@ -29,4 +48,3 @@ pokeApi.getPokemons().then((pokemons = []) => {
   // })
   // .catch((error) => console.error(error))
 
-})
