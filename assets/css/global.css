@@ -69,6 +69,7 @@ img#MyName {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.153);
+  border: solid rgba(133, 133, 133, 0.581) 5px;
 }
 
 .normal {
@@ -87,7 +88,7 @@ img#MyName {
   background-color: #678fee5f;
 }
 
-.Electric {
+.electric {
   background-color: #f7f32c5a;
 }
 
@@ -210,7 +211,7 @@ div > img:hover {
   transform: scale(1.5);
 }
 
-.paginacao {
+.pagination {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -219,17 +220,21 @@ div > img:hover {
   padding: 1rem;
 }
 
-.paginacao button {
+.pagination button {
   font-family: roboto;
   padding: .25rem .5rem;
   background-color: rgba(156, 83, 156, 0.519);
-  border: none;
-  border-radius: .5rem;
+  border: 2px solid black;  border-radius: .5rem;
   color: white;
-  width: 8rem;
-  height: 2.5rem;
+  width: 9rem;
+  height: 4rem;
+  border: 2px solid black;
+  box-shadow: 5px 5px gray;
 }
 
+.pagination button:hover {
+  background-color: rgba(156, 83, 156, 0.73);
+}
 
 @media screen and (min-width: 320px) {
   .header-menu {
